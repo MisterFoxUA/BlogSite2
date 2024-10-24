@@ -1,0 +1,258 @@
+:root {
+
+    --main-font-family: 'Poppins';
+    --site-bacground-color: #F8F9FA;
+}
+
+body {
+
+    font-family: var(--main-font-family);
+    font-size: 12px;
+
+    background-color: var(--site-bacground-color);
+
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+}
+
+.container {
+
+    margin: 0px auto;
+
+    max-width: 1280px;
+    padding: 0px 20px;
+}
+
+.container-medium {
+
+    margin: 0px auto;
+
+    max-width: 856px;
+    padding: 0px 40px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex-column-center{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-flex-column-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.w-fill {
+    width: 100%;
+}
+
+.h-fill{
+    height: 100%;
+}
+
+.no-before::before,
+.no-after::after {
+    display: none !important;
+}
+
+.mt-none { margin-top: 0 !important; }
+
+/* Стилі для адаптації */
+@media (min-width: 968px) {
+    .hide-pc {
+        display: none !important;
+    }
+}
+@media (max-width: 968px) {
+    .hide-mobile {
+        display: none !important;
+    }
+    .show,
+    .show-mobile {
+        display: flex !important;
+    }
+}
+
+/* ------------------------- Font styles ------------------------- */
+
+.text-lg {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 160%;
+}
+
+.text-md {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 139%;
+}
+
+.text-sm {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 167%;
+}
+
+.text-xs {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 250%;
+}
+
+.text-light-md {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 80%;
+}
+
+.text-light-sm {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156%;
+}
+
+.text-light-xs {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 208%;
+}
+
+.text-thin-xs {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 167%;
+}
+
+.text-thin-sm {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 179%;
+}
+
+.text-light {
+    color: #f8f9fa;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.text-dark {
+    color: #212529;
+}
+
+.text-gray {
+    color: #495057;
+}
+
+.text-semilight {
+
+    color: #e5e5e5;
+}
+
+.text-align-center {
+
+    text-align: center;
+}
+
+.text-btn-gray {
+    color: rgba(73, 80, 87, 0.5);
+}
+
+.text-transparent {
+    color: rgba(248, 249, 250, 0.5);
+}
+
+/* ------------------------- Button styles ------------------------- */
+
+.btn_base {
+
+    /* --width: 41px; */
+    --height: 25px;
+
+    --btn_border: transparent;
+    --btn_background: transparent;
+
+    --btn_hover_border: transparent;
+    --btn_hover_color: black;
+    --btn_hover_background: transparent;
+
+    --btn_border_radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+
+    cursor: pointer;
+
+    width: var(--width);
+    height: var(--height);
+
+    border: var(--btn_border);
+    background: var(--btn_background);
+
+    border-radius: var(--btn_border_radius);
+
+    transition: 1s;
+}
+
+.btn_base:hover {
+
+    color: var(--btn_hover_color);
+    border: var(--btn_hover_border);
+    background: var(--btn_hover_background);
+}
+
+.btn_base_orange {
+
+    --width: 100px;
+    --height: 40px;
+
+    --btn_font_size: 12px;
+
+    --btn_border: transparent;
+    --btn_color: #f8f9fa;
+    
+    --btn_background: #ddbea9;
+
+    --btn_hover_border: transparent;
+    --btn_hover_color: #f8f9fa;
+    ;
+    --btn_hover_background: #d98954;
+
+    --btn_border_radius: 20px;
+}
